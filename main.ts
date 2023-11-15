@@ -20,6 +20,7 @@ input.onButtonPressed(Button.A, function () {
   // setup
   basic.clearScreen()
   pixelLocation = 0
+  rotations = 0
   sprite = game.createSprite(0, 0)
   // rotate (outer loop)
   while (rotations <= 3) {
