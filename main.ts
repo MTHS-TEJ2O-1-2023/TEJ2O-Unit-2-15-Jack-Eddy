@@ -2,7 +2,7 @@
  *
  * Created by: Jack Eddy
  * Created on: Nov 2023
- * This program moves a pixel down when button A is pressed, and moves a pixel up diagonaly when butten B is pressed
+ * This program moves a pixel down when button A is pressed, and moves a pixel sideways and rotates once the edge is hit
 */
 
 // variables
@@ -15,16 +15,16 @@ basic.showIcon(IconNames.Happy)
 basic.pause(500)
 basic.clearScreen()
 
-// start loop
+// move pixel on button A pressed
 input.onButtonPressed(Button.A, function () {
   // setup
   basic.clearScreen()
   pixelLocation = 0
   sprite = game.createSprite(0, 0)
-  // rotate
+  // rotate (outer loop)
   while (rotations <= 3) {
     pixelLocation = 0
-    // move pixel forward
+    // move pixel forward (inner loop)
     while (pixelLocation <= 4) {
       pixelLocation++
       basic.pause(500)
