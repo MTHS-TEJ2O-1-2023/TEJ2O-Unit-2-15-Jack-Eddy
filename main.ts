@@ -34,8 +34,8 @@ input.onButtonPressed(Button.A, function () {
     sprite.turn(Direction.Right, 90)
     rotations++
   }
-    // end
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
-    basic.pause(1000)
+  // end
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
+  basic.pause(1000)
 })
